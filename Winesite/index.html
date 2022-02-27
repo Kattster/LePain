@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/03e2b87a7b.js" crossorigin="anonymous"></script>
+    <!-- Link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Vino</title>
+</head>
+
+<body>
+    <!-- NAVBAR Componet -->
+    <!-- The "navbar-dark" componet is used on Navbars with a dark background so the text can be seen -->
+    <!-- The "sticky-top" class is ised to set the sticky position to an element (The nav element in this case) -->
+    <nav class="navbar bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <!-- The "navbar-brand" class is used to make the logo or text larger to help it stand out -->
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-wine-glass"></i></i> Le Vin </a>
+        </div>
+    </nav>
+
+    <!-- SHOWCASE -->
+    <!-- section#showcase.d-flex.flex-column.justify-content-center.align-items-center.text-light.m-0.p-5>h1.display-3 -->
+    <section id="showcase" class="d-flex flex-column justify-content-center align-items-center text-light m-0 p-5 ">
+        <h1 class="display-3">Le Vin</h1>
+        <p class="lead">When grapes age, we come together</p>
+        <a href="gallery" class="btn btn-secondary">Voir Les Wines</a>
+    </section>
+
+    <!-- GALLERY -->
+    <!-- section#gallery.container -->
+    <section id="gallery" class="bg-dark p-5">
+        <div class="container">
+            <!-- Bootstrap Grid -->
+            <div class="row">
+                <!-- bread 1 -->
+                <!-- section.mb-4.col-lg-4 -->
+                <section class="mb-4 col-lg-4">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="images/winesplash.jpeg"red" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Wine</h5>
+                            <p class="card-text">Red wine gains its color and flavor (notably, tannins) from the grape skin, by allowing the grapes to soak in the extracted juice. Red wine is made from dark-colored red grape varieties.</p>
+                            <a href="https://en.wikipedia.org/wiki/wine" class="btn btn-outline-info btn-sm">Learn
+                                More</a>
+                            <a href="" class="btn btn-sm btn-outline-danger">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Bread 2 -->
+                <!--  section.mb-4.col-lg-4>.card>img^.card-body>h5.card-title^p.card-text^a.btn.btn-outline-info^a.btn.btn-outline-danger>i.fa-regular.fa.heart -->
+                <section class="mb-4 col-lg-4">
+                    <div class="card"><img src="images/whitewine.jpeg" alt="whitewine" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">White</h5>
+                            <p class="card-text">To make white wine, grapes are pressed quickly with the juice immediately drained away from the grape skins.</p>
+                            <a href="https://en.wikipedia.org/wiki/Challah" class="btn btn-outline-info btn-sm">Learn
+                                More</a>
+                            <a href="#" class="btn btn-sm btn-outline-danger">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bread 3 -->
+
+                <!-- section.mb-4.col-lg-4>.card>img.card-img-top+.card-body>h5.card-title+p.card-text+a.btn.btn-outline-info.btn-sm+a.btn.btn-sm.btn.outline-danger>i.fa-regular.fa-heart -->
+                <section class="mb-4 col-lg-4">
+                    <div class="card">
+                        <img src="images/sparkling.jpeg" alt="sparkling" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sparkling</h5>
+                            <p class="card-text">These are effervescent wines, made in any of the above styles (ie, orange, red, rosé, white). They must undergo secondary fermentation to create carbon dioxide, which creates the bubbles.</p>
+                            <a href="https://en.wikipedia.org/wiki/wine" class="btn btn-outline-info btn-sm">Learn More</a>
+                            <a href="" class="btn btn-sm btn-outline-danger">
+                                <i class="fa-regular fa-heart">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-secondary">
+        <div class="container">
+            <p class="lead m-0 p-4 text-center text-light">
+                Built Using
+                <a href="https://getbootstrap.com/" class="text-info">Bootstrap</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- Link to Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
